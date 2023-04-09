@@ -28,7 +28,8 @@ export default function Page() {
         </div>
         <div className="col-start-2 col-end-2 flex w-[calc(100vw-2rem)] max-w-3xl flex-col-reverse gap-4 overflow-x-visible overflow-y-scroll p-6 pr-2">
           {isLoading && (
-            <div className="mr-8 rounded-lg rounded-bl-none bg-gray-100 p-3 shadow-md">
+            <div className="mr-8 rounded-lg rounded-bl-none bg-gray-100 p-3 px-4 shadow-md flex items-center gap-3">
+              <div className="h-5 w-5 animate-spin rounded-full border-[3px] border-dashed border-primary"></div>
               loading...
             </div>
           )}
@@ -46,7 +47,7 @@ export default function Page() {
             </div>
           ))}
         </div>
-        <div className="row-start-2 row-end-2 col-start-3 col-end-3 flex flex-col justify-end">
+        <div className="col-start-3 col-end-3 row-start-2 row-end-2 flex flex-col justify-end">
           <div className="mr-auto h-4 w-4 bg-primary">
             <div className="h-4 w-4 rounded-bl-full bg-white"></div>
           </div>
